@@ -38,7 +38,7 @@ func (r *PokemonApiClient) FindPokemon(name string) string {
 		return "failed to decode json"
 	}
 
-	fmt.Println(pokemon)
+	fmt.Println(pokemon.Abilities[0])
 
 	return "hehe"
 }
