@@ -4,7 +4,7 @@
 
 The goal of this repository is to help you learn [Go](https://go.dev/) by building a CLI tool that interacts with the [Pokémon API](https://pokeapi.co/). With this tool, you should be able to execute the following commands:
 
-`fly-pokeapi pokemon`: This command prints a table in the terminal output containing the name of the Pokémon, its types, and its abilities.
+`fly-pokeapi pokemon <name>`:  Name must be mandatory. This command gets the detail of a pokemon and prints a table in the terminal output containing the name of the Pokémon, its types, and its abilities.
 
 *Example output:*
 
