@@ -10,6 +10,10 @@ func RootCommand() *cobra.Command {
 		Short: "A basic CLI example",
 		Long:  "A basic CLI example using Cobra",
 		Run: func(cmd *cobra.Command, args []string) {
+			client := NewPokemonApiClient()
+
+			client.FindPokemon("bulbasaur")
+
 			cmd.Println("Welcome to FlyPoke!!")
 		},
 	}
