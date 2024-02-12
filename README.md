@@ -1,9 +1,24 @@
 # fly-pokeapi
 
+## Prerequisites
+
+- Go installed, you may use brew.
+
+```
+brew install go
+```
+
+## Running the CLI
+
+```
+go run . <command>
+```
+
 ## Goal
 
 The goal of this repository is to help you learn [Go](https://go.dev/) by building a CLI tool that interacts with the [Pokémon API](https://pokeapi.co/). With this tool, you should be able to execute the following commands:
 
+### First Challenge
 `fly-pokeapi pokemon <name>`:  Name must be mandatory. This command gets the detail of a pokemon and prints a table in the terminal output containing the name of the Pokémon, its types, and its abilities.
 
 *Example output:*
@@ -13,7 +28,7 @@ The goal of this repository is to help you learn [Go](https://go.dev/) by buildi
 | Bulbasaur | Grass, Poison        | Overgrow, Chlorophyll                         |
 
 
-
+### Second Challenge
 `fly-pokeapi attack`: Use this command to group the first 9 Pokémon by type and sort them by their attack power. Emojis representing each type (🔥 🌵 💧) should be used.
 
 *Example output:*
@@ -39,6 +54,7 @@ The goal of this repository is to help you learn [Go](https://go.dev/) by buildi
 | Squirtle    |   48   |
 | Wartortle   |   63   |
 
+### Third Challenge
 `fly-pokeapi stats`: This command creates a CSV file containing the first 9 Pokémon and their evolutionary chain. Additionally, it groups and sums up the each stat belonging to each Pokémon.
 
 ```csv
